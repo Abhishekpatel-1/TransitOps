@@ -1,0 +1,25 @@
+import { Router } from "express";
+import { getDashboard, globalSearch } from "../controllers/dashboard.controller.js";
+import { asyncHandler } from "../middleware/async-handler.js";
+import { allowRoles, requireAuth } from "../middleware/auth.js";
+import { authRouter } from "./auth.routes.js";
+import { driverRouter } from "./driver.routes.js";
+import { expenseRouter } from "./expense.routes.js";
+import { fuelRouter } from "./fuel.routes.js";
+import { maintenanceRouter } from "./maintenance.routes.js";
+import { reportRouter } from "./report.routes.js";
+import { tripRouter } from "./trip.routes.js";
+import { vehicleRouter } from "./vehicle.routes.js";
+
+export const apiRouter = Router();
+apiRouter.get("/health", (_req, res) => res.json({ status: "ok", service: "transitops-api" }));
+apiRouter.use("/auth", authRouter);
+apiRouter.get("/dashboard", requireAuth, allowRoles("FLEET_MANAGER", "SAFETY_OFFICER", "FINANCIAL_ANALYST", "DRIVER"), asyncHandler(getDashboard));
+apiRouter.get("/search", requireAuth, asyncHandler(globalSearch));
+apiRouter.use("/vehicles", vehicleRouter);
+apiRouter.use("/drivers", driverRouter);
+apiRouter.use("/trips", tripRouter);
+apiRouter.use("/maintenance", maintenanceRouter);
+apiRouter.use("/fuel-logs", fuelRouter);
+apiRouter.use("/expenses", expenseRouter);
+apiRouter.use("/reports", reportRouter);
