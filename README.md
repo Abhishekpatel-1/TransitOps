@@ -118,7 +118,7 @@ A modern full-stack transport operations management platform designed to streaml
 - Docker
 - Docker Compose
 
----
+-----
 
 # 📂 Project Structure
 
@@ -330,9 +330,9 @@ Contributions are welcome!
 
 **Abhishek Patel**
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/Abhishekpatel-1
 
-LinkedIn: https://linkedin.com/in/your-profile
+LinkedIn: https://linkedin.com/in/abhishekpatel-mh3008
 
 ---
 
