@@ -2,8 +2,6 @@
 
 A modern full-stack transport operations management platform designed to streamline fleet management, driver operations, trip scheduling, maintenance tracking, fuel monitoring, expense management, reporting, and analytics. Built with a scalable architecture, TransitOps enables organizations to efficiently manage day-to-day transport operations through secure role-based access and real-time insights.
 
----
-
 ## ✨ Features
 
 ### 🔐 Authentication & Authorization
