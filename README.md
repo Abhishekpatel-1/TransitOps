@@ -164,7 +164,7 @@ README.md
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/TransitOps.git
+git clone https://github.com/Abhishekpatel-1/TransitOps.git
 
 cd TransitOps
 ```
