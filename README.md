@@ -289,29 +289,7 @@ postman/TransitOps.postman_collection.json
 - Multi-Organization Support
 - Audit Logs
 - Offline Support
-
----
-
-# 📷 Screenshots
-
-```
-Dashboard
-
-Fleet Management
-
-Trip Management
-
-Maintenance Module
-
-Fuel Analytics
-
-Reports
-```
-
-(Add project screenshots here.)
-
----
-
+ ---
 # 🤝 Contributing
 
 Contributions are welcome!
